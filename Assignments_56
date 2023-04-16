@@ -1,1 +1,153 @@
+1. Write a program to convert a floating 
+point into correspondig integer .                                                                                                 
+#Python program to add two numbers 
 
+number1 = input("First number: ") 
+number2 = input("Second number: ") 
+ 
+# Adding two numbers 
+# User might also enter float numbers 
+
+sum = float(number1) + float(number2) 
+
+ # Display the sum 
+# will print value in float 
+
+print("The sum of {0} and {1} is {2}" 
+      .format(number1, number2, sum))
+
+output:
+First number:  7
+Second number: 9
+The sum of 7 and 9 is 15.0
+
+2.write the program to calculate area of a triangle using heron's formula.
+#area of traingle using heron's formula
+
+a=float(input("enter the first side of triangle:"))
+b=float(input("enter the second side of traingle:"))
+c=float(input("enter the third side of triangle:"))
+print(a,b,c)
+s = (a+b+c)/2
+area= (s*(s-a)*(s-b)*(s-c))**0.5
+print("area="+str(area))
+
+output:
+enter the first side of traingle:12
+enter the second side of triangle: 18
+enter the third side of triangle: 10
+12.0 18.0 10.0
+area = 56.5685424949
+
+
+3.write a program to convert degrees Fahrenheit into degrees Celsius.
+#convert Fahrenheit to Celsius
+
+fahrenheit=float(input("Enter the temperature in fahrenheit:")
+celsius=(0.56)*(fahrenheit-32)
+print("temperature in degrees Celsius=",celsius)
+
+output:
+Enter the temperature in fahrenheit:104.3
+temperature in degrees celsius=40.488
+
+4.write a program to swap two variables.
+# Python program to swap two variables
+
+x = 5
+y = 10
+#x = input('Enter value of x: ')
+#y = input('Enter value of y: ')
+
+temp = x
+x = y
+y = temp
+
+print('The value of x after swapping: {}'.format(x))
+print('The value of y after swapping: {}'.format(y))
+
+output:
+The value of x after swapping:10
+The value of y after swapping:5
+
+5.write a program to calculate the square root of a number.
+# Python Program to calculate the square root
+
+num = 4
+num = float(input('Enter a number: '))
+num_sqrt = num ** 0.5
+print('The square root of %0.1f is %0.1f'%(num ,num_sqrt))
+
+output:
+The square root of 4.0 is 2.0
+
+6.write a program to check if the number is even or odd.
+# to check number is even or odd
+
+num = int(input("Enter a number: "))
+if (num % 2) == 0:
+   print("%0 is Even".format(num))
+else:
+   print("%0 is Odd".format(num))
+
+output:
+Enter a number:5
+5 is odd
+
+7.write a program to write factorial of a given number.
+# to find the factorial of a number 
+
+num = 7
+
+factorial = 1
+
+if num < 0:
+   print("Sorry, factorial does not exist for negative numbers")
+elif num == 0:
+   print("The factorial of 0 is 1")
+else:
+   for i in range(1,num + 1):
+       factorial = factorial*i
+   print("The factorial of",num,"is",factorial)
+
+Output: The factorial of 7 is 5040
+
+8.  Write a program to write sum of natural numbers.
+# to find sum of natural numbers
+
+num = 10
+
+if num < 0:
+   print("Enter a positive number")
+else:
+   sum = 0
+   while(num > 0):
+       sum += num
+       num -= 1
+   print("The sum is", sum)
+
+Output:
+The sum is 55
+
+9. Write a program to test whether a number is negative, positive,or equal to zero.
+num=int(input ("enter any number: "))
+if (num ==0):
+   print ("Number=0")
+elif (num> 0):
+   print("The number is positive")
+else:
+   print ("The number is negative")
+
+output:
+Enter any number:-121
+The number is negative
+
+10. write a Program to print the digit at one's place of number.
+
+num=int(input("enter any number: ")
+digitat_ones_Place_=num% 10
+print ("The digit at ones place of " + str(num) + " + str(digit_at_ones_place))
+
+output:
+Enter any number: 1345 
+The digit at ones place of 1345 is 5
